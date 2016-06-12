@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15FE68B91D0A5621005CBC30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68B81D0A5621005CBC30 /* main.m */; };
+		15FE68BC1D0A5621005CBC30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68BB1D0A5621005CBC30 /* AppDelegate.m */; };
+		15FE68BF1D0A5621005CBC30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68BE1D0A5621005CBC30 /* ViewController.m */; };
+		15FE68C21D0A5621005CBC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15FE68C01D0A5621005CBC30 /* Main.storyboard */; };
+		15FE68C41D0A5621005CBC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FE68C31D0A5621005CBC30 /* Assets.xcassets */; };
+		15FE68C71D0A5621005CBC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15FE68C51D0A5621005CBC30 /* LaunchScreen.storyboard */; };
+		15FE68D21D0A5621005CBC30 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68D11D0A5621005CBC30 /* ____Tests.m */; };
+		15FE68DD1D0A5621005CBC30 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68DC1D0A5621005CBC30 /* ____UITests.m */; };
+		15FE68EF1D0A68E6005CBC30 /* CXCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68EE1D0A68E6005CBC30 /* CXCard.m */; };
+		15FE68F21D0AB314005CBC30 /* CXDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68F11D0AB314005CBC30 /* CXDeck.m */; };
+		15FE68F51D0AC9B2005CBC30 /* CXPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68F41D0AC9B2005CBC30 /* CXPlayingCard.m */; };
+		15FE68F81D0AEF99005CBC30 /* CXPlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68F71D0AEF99005CBC30 /* CXPlayingCardDeck.m */; };
+		15FE68FB1D0D592D005CBC30 /* CXCardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FE68FA1D0D592D005CBC30 /* CXCardMatchingGame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15FE68CE1D0A5621005CBC30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15FE68AC1D0A5621005CBC30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15FE68B31D0A5621005CBC30;
+			remoteInfo = "纸牌游戏";
+		};
+		15FE68D91D0A5621005CBC30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15FE68AC1D0A5621005CBC30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15FE68B31D0A5621005CBC30;
+			remoteInfo = "纸牌游戏";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15FE68B41D0A5621005CBC30 /* 纸牌游戏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "纸牌游戏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FE68B81D0A5621005CBC30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15FE68BA1D0A5621005CBC30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		15FE68BB1D0A5621005CBC30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		15FE68BD1D0A5621005CBC30 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		15FE68BE1D0A5621005CBC30 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		15FE68C11D0A5621005CBC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15FE68C31D0A5621005CBC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15FE68C61D0A5621005CBC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15FE68C81D0A5621005CBC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15FE68CD1D0A5621005CBC30 /* 纸牌游戏Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "纸牌游戏Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FE68D11D0A5621005CBC30 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		15FE68D31D0A5621005CBC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15FE68D81D0A5621005CBC30 /* 纸牌游戏UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "纸牌游戏UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FE68DC1D0A5621005CBC30 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		15FE68DE1D0A5621005CBC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15FE68ED1D0A68E6005CBC30 /* CXCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCard.h; sourceTree = "<group>"; };
+		15FE68EE1D0A68E6005CBC30 /* CXCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCard.m; sourceTree = "<group>"; };
+		15FE68F01D0AB314005CBC30 /* CXDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXDeck.h; sourceTree = "<group>"; };
+		15FE68F11D0AB314005CBC30 /* CXDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXDeck.m; sourceTree = "<group>"; };
+		15FE68F31D0AC9B2005CBC30 /* CXPlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXPlayingCard.h; sourceTree = "<group>"; };
+		15FE68F41D0AC9B2005CBC30 /* CXPlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXPlayingCard.m; sourceTree = "<group>"; };
+		15FE68F61D0AEF99005CBC30 /* CXPlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXPlayingCardDeck.h; sourceTree = "<group>"; };
+		15FE68F71D0AEF99005CBC30 /* CXPlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXPlayingCardDeck.m; sourceTree = "<group>"; };
+		15FE68F91D0D592D005CBC30 /* CXCardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCardMatchingGame.h; sourceTree = "<group>"; };
+		15FE68FA1D0D592D005CBC30 /* CXCardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCardMatchingGame.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15FE68B11D0A5621005CBC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FE68CA1D0A5621005CBC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FE68D51D0A5621005CBC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15FE68AB1D0A5621005CBC30 = {
+			isa = PBXGroup;
+			children = (
+				15FE68B61D0A5621005CBC30 /* 纸牌游戏 */,
+				15FE68D01D0A5621005CBC30 /* 纸牌游戏Tests */,
+				15FE68DB1D0A5621005CBC30 /* 纸牌游戏UITests */,
+				15FE68B51D0A5621005CBC30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15FE68B51D0A5621005CBC30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15FE68B41D0A5621005CBC30 /* 纸牌游戏.app */,
+				15FE68CD1D0A5621005CBC30 /* 纸牌游戏Tests.xctest */,
+				15FE68D81D0A5621005CBC30 /* 纸牌游戏UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15FE68B61D0A5621005CBC30 /* 纸牌游戏 */ = {
+			isa = PBXGroup;
+			children = (
+				15FE68EA1D0A6210005CBC30 /* controller */,
+				15FE68EC1D0A6240005CBC30 /* model */,
+				15FE68EB1D0A6235005CBC30 /* view */,
+				15FE68B71D0A5621005CBC30 /* Supporting Files */,
+			);
+			path = "纸牌游戏";
+			sourceTree = "<group>";
+		};
+		15FE68B71D0A5621005CBC30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15FE68C01D0A5621005CBC30 /* Main.storyboard */,
+				15FE68BA1D0A5621005CBC30 /* AppDelegate.h */,
+				15FE68BB1D0A5621005CBC30 /* AppDelegate.m */,
+				15FE68B81D0A5621005CBC30 /* main.m */,
+				15FE68C31D0A5621005CBC30 /* Assets.xcassets */,
+				15FE68C51D0A5621005CBC30 /* LaunchScreen.storyboard */,
+				15FE68C81D0A5621005CBC30 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15FE68D01D0A5621005CBC30 /* 纸牌游戏Tests */ = {
+			isa = PBXGroup;
+			children = (
+				15FE68D11D0A5621005CBC30 /* ____Tests.m */,
+				15FE68D31D0A5621005CBC30 /* Info.plist */,
+			);
+			path = "纸牌游戏Tests";
+			sourceTree = "<group>";
+		};
+		15FE68DB1D0A5621005CBC30 /* 纸牌游戏UITests */ = {
+			isa = PBXGroup;
+			children = (
+				15FE68DC1D0A5621005CBC30 /* ____UITests.m */,
+				15FE68DE1D0A5621005CBC30 /* Info.plist */,
+			);
+			path = "纸牌游戏UITests";
+			sourceTree = "<group>";
+		};
+		15FE68EA1D0A6210005CBC30 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				15FE68BD1D0A5621005CBC30 /* ViewController.h */,
+				15FE68BE1D0A5621005CBC30 /* ViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		15FE68EB1D0A6235005CBC30 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		15FE68EC1D0A6240005CBC30 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				15FE68ED1D0A68E6005CBC30 /* CXCard.h */,
+				15FE68EE1D0A68E6005CBC30 /* CXCard.m */,
+				15FE68F01D0AB314005CBC30 /* CXDeck.h */,
+				15FE68F11D0AB314005CBC30 /* CXDeck.m */,
+				15FE68F31D0AC9B2005CBC30 /* CXPlayingCard.h */,
+				15FE68F41D0AC9B2005CBC30 /* CXPlayingCard.m */,
+				15FE68F61D0AEF99005CBC30 /* CXPlayingCardDeck.h */,
+				15FE68F71D0AEF99005CBC30 /* CXPlayingCardDeck.m */,
+				15FE68F91D0D592D005CBC30 /* CXCardMatchingGame.h */,
+				15FE68FA1D0D592D005CBC30 /* CXCardMatchingGame.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15FE68B31D0A5621005CBC30 /* 纸牌游戏 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15FE68E11D0A5621005CBC30 /* Build configuration list for PBXNativeTarget "纸牌游戏" */;
+			buildPhases = (
+				15FE68B01D0A5621005CBC30 /* Sources */,
+				15FE68B11D0A5621005CBC30 /* Frameworks */,
+				15FE68B21D0A5621005CBC30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "纸牌游戏";
+			productName = "纸牌游戏";
+			productReference = 15FE68B41D0A5621005CBC30 /* 纸牌游戏.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15FE68CC1D0A5621005CBC30 /* 纸牌游戏Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15FE68E41D0A5621005CBC30 /* Build configuration list for PBXNativeTarget "纸牌游戏Tests" */;
+			buildPhases = (
+				15FE68C91D0A5621005CBC30 /* Sources */,
+				15FE68CA1D0A5621005CBC30 /* Frameworks */,
+				15FE68CB1D0A5621005CBC30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15FE68CF1D0A5621005CBC30 /* PBXTargetDependency */,
+			);
+			name = "纸牌游戏Tests";
+			productName = "纸牌游戏Tests";
+			productReference = 15FE68CD1D0A5621005CBC30 /* 纸牌游戏Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15FE68D71D0A5621005CBC30 /* 纸牌游戏UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15FE68E71D0A5621005CBC30 /* Build configuration list for PBXNativeTarget "纸牌游戏UITests" */;
+			buildPhases = (
+				15FE68D41D0A5621005CBC30 /* Sources */,
+				15FE68D51D0A5621005CBC30 /* Frameworks */,
+				15FE68D61D0A5621005CBC30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15FE68DA1D0A5621005CBC30 /* PBXTargetDependency */,
+			);
+			name = "纸牌游戏UITests";
+			productName = "纸牌游戏UITests";
+			productReference = 15FE68D81D0A5621005CBC30 /* 纸牌游戏UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15FE68AC1D0A5621005CBC30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CX;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = chenxi;
+				TargetAttributes = {
+					15FE68B31D0A5621005CBC30 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 942R9KPAV6;
+					};
+					15FE68CC1D0A5621005CBC30 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 942R9KPAV6;
+						TestTargetID = 15FE68B31D0A5621005CBC30;
+					};
+					15FE68D71D0A5621005CBC30 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 942R9KPAV6;
+						TestTargetID = 15FE68B31D0A5621005CBC30;
+					};
+				};
+			};
+			buildConfigurationList = 15FE68AF1D0A5621005CBC30 /* Build configuration list for PBXProject "纸牌游戏" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15FE68AB1D0A5621005CBC30;
+			productRefGroup = 15FE68B51D0A5621005CBC30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15FE68B31D0A5621005CBC30 /* 纸牌游戏 */,
+				15FE68CC1D0A5621005CBC30 /* 纸牌游戏Tests */,
+				15FE68D71D0A5621005CBC30 /* 纸牌游戏UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15FE68B21D0A5621005CBC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FE68C71D0A5621005CBC30 /* LaunchScreen.storyboard in Resources */,
+				15FE68C41D0A5621005CBC30 /* Assets.xcassets in Resources */,
+				15FE68C21D0A5621005CBC30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FE68CB1D0A5621005CBC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FE68D61D0A5621005CBC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15FE68B01D0A5621005CBC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FE68EF1D0A68E6005CBC30 /* CXCard.m in Sources */,
+				15FE68FB1D0D592D005CBC30 /* CXCardMatchingGame.m in Sources */,
+				15FE68F21D0AB314005CBC30 /* CXDeck.m in Sources */,
+				15FE68BF1D0A5621005CBC30 /* ViewController.m in Sources */,
+				15FE68BC1D0A5621005CBC30 /* AppDelegate.m in Sources */,
+				15FE68F81D0AEF99005CBC30 /* CXPlayingCardDeck.m in Sources */,
+				15FE68B91D0A5621005CBC30 /* main.m in Sources */,
+				15FE68F51D0AC9B2005CBC30 /* CXPlayingCard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FE68C91D0A5621005CBC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FE68D21D0A5621005CBC30 /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FE68D41D0A5621005CBC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FE68DD1D0A5621005CBC30 /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15FE68CF1D0A5621005CBC30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15FE68B31D0A5621005CBC30 /* 纸牌游戏 */;
+			targetProxy = 15FE68CE1D0A5621005CBC30 /* PBXContainerItemProxy */;
+		};
+		15FE68DA1D0A5621005CBC30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15FE68B31D0A5621005CBC30 /* 纸牌游戏 */;
+			targetProxy = 15FE68D91D0A5621005CBC30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15FE68C01D0A5621005CBC30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15FE68C11D0A5621005CBC30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15FE68C51D0A5621005CBC30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15FE68C61D0A5621005CBC30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15FE68DF1D0A5621005CBC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15FE68E01D0A5621005CBC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15FE68E21D0A5621005CBC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "纸牌游戏/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chenxi.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		15FE68E31D0A5621005CBC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "纸牌游戏/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chenxi.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		15FE68E51D0A5621005CBC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "纸牌游戏Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chenxi.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/纸牌游戏.app/纸牌游戏";
+			};
+			name = Debug;
+		};
+		15FE68E61D0A5621005CBC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "纸牌游戏Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chenxi.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/纸牌游戏.app/纸牌游戏";
+			};
+			name = Release;
+		};
+		15FE68E81D0A5621005CBC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "纸牌游戏UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chenxi.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "纸牌游戏";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		15FE68E91D0A5621005CBC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "纸牌游戏UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chenxi.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "纸牌游戏";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15FE68AF1D0A5621005CBC30 /* Build configuration list for PBXProject "纸牌游戏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15FE68DF1D0A5621005CBC30 /* Debug */,
+				15FE68E01D0A5621005CBC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15FE68E11D0A5621005CBC30 /* Build configuration list for PBXNativeTarget "纸牌游戏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15FE68E21D0A5621005CBC30 /* Debug */,
+				15FE68E31D0A5621005CBC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15FE68E41D0A5621005CBC30 /* Build configuration list for PBXNativeTarget "纸牌游戏Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15FE68E51D0A5621005CBC30 /* Debug */,
+				15FE68E61D0A5621005CBC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15FE68E71D0A5621005CBC30 /* Build configuration list for PBXNativeTarget "纸牌游戏UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15FE68E81D0A5621005CBC30 /* Debug */,
+				15FE68E91D0A5621005CBC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15FE68AC1D0A5621005CBC30 /* Project object */;
+}
