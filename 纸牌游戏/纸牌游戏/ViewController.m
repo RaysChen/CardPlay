@@ -8,24 +8,28 @@
 
 #import "ViewController.h"
 #import "CXPlayingCardDeck.h"
+#import "CXCardMatchingGame.h"
 
 
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
-@property (nonatomic) int flipCount;
-@property (strong ,nonatomic)CXDeck *deck;
+
+@property (strong ,nonatomic)CXCardMatchingGame *game;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @end
 
 @implementation ViewController
 
-- (CXDeck*)deck
+- (CXCardMatchingGame *)game
 {
-    if (!_deck)_deck = [self creatDeck];
-    return _deck;
-        
+    if (!_game)_game = [[CXCardMatchingGame alloc]initWithCardCount:[self.cardButtons count]
+                                                          usingDeck:[self creatDeck]];
+
+    return _game;
 }
+
 
 -(CXDeck*)creatDeck
 {
@@ -34,35 +38,37 @@
 
 
 
-- (void) setFlipCount:(int)flipCount
-{
-    _flipCount = flipCount;
-    self.flipsLabel.text = [NSString stringWithFormat:@"   flips : %d", self.flipCount];
-    NSLog(@"flipcount change %d", self.flipCount);
-
-}
-
 - (IBAction)touchCardButton:(UIButton *)sender
 {
+    int chosenButtonIndex = [self.cardButtons indexOfObject:sender];
+    [self.game choosenCardAtIndex:chosenButtonIndex];
+    [self updateUI];
     
-    if ([sender.currentTitle length]) {
-        
-        [sender setBackgroundImage:[UIImage imageNamed:@"stanford"]
-                            forState:UIControlStateNormal];
-        [sender setTitle:@"" forState:UIControlStateNormal];
+}
 
-    }else{
-        CXCard *randomCard = [self.deck drawRandomCard];
-        
-        if (randomCard) {
-            [sender setBackgroundImage:[UIImage imageNamed:@"blank card rounded corner"]
-                              forState:UIControlStateNormal];
-            [sender setTitle:randomCard .contents forState:UIControlStateNormal];
-        }
-
+- (void)updateUI
+{
+    for (UIButton *cardButton in self.cardButtons) {
+        int cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
+        CXCard *card = [self.game cardAtIndex:cardButtonIndex];
+        [cardButton setTitle:[self titleForCard:card ]forState:UIControlStateNormal];
+        [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
+        cardButton.enabled = !card.isMatched;
+        self.scoreLabel.text = [NSString stringWithFormat:@" score %d",self.game.score];
     }
     
-    self.flipCount ++;
+    
 }
+
+- (NSString *)titleForCard: (CXCard *)card
+{
+    return card.isChosen ? card.contents :@"";
+}
+
+- (UIImage *)backgroundImageForCard:(CXCard *)card
+{
+    return [UIImage imageNamed:card.isChosen ? @"blank card rounded corner":@"stanford"];
+}
+
 
 @end

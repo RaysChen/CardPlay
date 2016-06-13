@@ -12,6 +12,7 @@
 #import "CXCard.h"
 
 @interface CXPlayingCard : CXCard
+
 @property (strong ,nonatomic) NSString *suit; //牌的花色
 @property (nonatomic) NSInteger rank;//牌的数字
 

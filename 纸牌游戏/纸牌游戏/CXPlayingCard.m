@@ -10,6 +10,23 @@
 
 @implementation CXPlayingCard
 
+- (int)match:(NSArray *)otherCards
+{
+    int score = 0;
+    
+    if ([otherCards count] == 1) {
+        CXPlayingCard *otherCard = [otherCards firstObject];
+        if (otherCard.rank ==self.rank) {
+            score = 4;
+            
+        }else if ([otherCard.suit isEqualToString:self.suit]){
+            score = 1;
+        }
+    }
+    
+    return score;
+}
+
 //重写从CXCard继承来的contents属性的getter方法，设置牌的内容
 - (NSString *)contents
 {

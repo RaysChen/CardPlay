@@ -31,7 +31,7 @@
                                     <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vav-f8-sQC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="   flips : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3W-bV-ca2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="   Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3W-bV-ca2">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="gc9-iW-v1Z"/>
@@ -138,20 +138,6 @@
                                     <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S9t-WB-Ead"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhz-z2-Doh">
-                                <rect key="frame" x="0.0" y="330" width="101" height="147"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="101" id="Fbq-hP-Vle"/>
-                                    <constraint firstAttribute="height" constant="147" id="wYo-SZ-u8x"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" backgroundImage="stanford">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAH-3h-c2x"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGh-tl-aR9">
                                 <rect key="frame" x="101" y="330" width="101" height="147"/>
                                 <constraints>
@@ -194,16 +180,43 @@
                                     <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9Q-UF-sbD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhz-z2-Doh">
+                                <rect key="frame" x="0.0" y="330" width="101" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="Fbq-hP-Vle"/>
+                                    <constraint firstAttribute="height" constant="147" id="wYo-SZ-u8x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" backgroundImage="stanford">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAH-3h-c2x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="flipsLabel" destination="E3W-bV-ca2" id="cJP-Di-oXo"/>
+                        <outlet property="scoreLabel" destination="E3W-bV-ca2" id="f3m-lF-e51"/>
+                        <outletCollection property="cardButtons" destination="sGK-Sg-MM2" id="Pxw-FD-Pip"/>
+                        <outletCollection property="cardButtons" destination="LNM-m2-P0T" id="nWZ-7H-c0x"/>
+                        <outletCollection property="cardButtons" destination="dGh-tl-aR9" id="wEJ-Hb-FK7"/>
+                        <outletCollection property="cardButtons" destination="Nhz-z2-Doh" id="amc-MU-xxX"/>
+                        <outletCollection property="cardButtons" destination="93E-WX-0mK" id="NRo-vt-dTE"/>
+                        <outletCollection property="cardButtons" destination="LY0-au-p4A" id="Xbv-ZT-Sku"/>
+                        <outletCollection property="cardButtons" destination="Nes-JQ-C2n" id="C7M-NX-wTd"/>
+                        <outletCollection property="cardButtons" destination="xKQ-T8-93Q" id="oG2-G6-yA0"/>
+                        <outletCollection property="cardButtons" destination="2uj-qs-vd0" id="kPC-lN-2x6"/>
+                        <outletCollection property="cardButtons" destination="UC7-09-uKg" id="zLD-aY-fYs"/>
+                        <outletCollection property="cardButtons" destination="0FV-4b-1tI" id="3VZ-Gh-wiC"/>
+                        <outletCollection property="cardButtons" destination="1nb-1Y-im0" id="H3t-qD-0mz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="427" y="359"/>
+            <point key="canvasLocation" x="285" y="325"/>
         </scene>
     </scenes>
     <resources>

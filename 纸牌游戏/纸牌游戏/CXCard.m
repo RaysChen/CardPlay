@@ -12,6 +12,7 @@
 
 @implementation CXCard
 
+//如果返回非0，匹配；返回0，不匹配
 - (int)match:(NSArray *)otherCard
 {
     int score = 0;
