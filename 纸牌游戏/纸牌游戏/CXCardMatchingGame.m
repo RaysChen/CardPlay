@@ -77,7 +77,7 @@ static const int COST_TO_CHOOSE = 1;
         //getter用重命名的isChosen，setter用chosen
         if (card.isChosen) {
             card.chosen = NO;//两次选择＝no,一种开关
-        
+            
         }else{
             //选择另一张纸牌开始匹配
             //遍历数组找到otherCard
@@ -86,7 +86,7 @@ static const int COST_TO_CHOOSE = 1;
                 //如果otherCard已经被选择and没有匹配过，那么：
                 if (otherCard.isChosen && !otherCard.isMatched) {
                     
-                                      //card与otherCard用match方法
+                    //card与otherCard用match方法
                     int matchScore = [card match:@[otherCard]];//@[]创建一个数组，将otherCard放进去
                     
                     //如果匹配，那么
@@ -108,10 +108,10 @@ static const int COST_TO_CHOOSE = 1;
             //翻牌会减分
             self.score -= COST_TO_CHOOSE;
             card.chosen = YES;//标记为已选
-        
+            
         }
     }
-
+    
 }
 
 

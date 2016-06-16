@@ -198,7 +198,6 @@
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="flipsLabel" destination="E3W-bV-ca2" id="cJP-Di-oXo"/>
                         <outlet property="scoreLabel" destination="E3W-bV-ca2" id="f3m-lF-e51"/>
                         <outletCollection property="cardButtons" destination="sGK-Sg-MM2" id="Pxw-FD-Pip"/>
                         <outletCollection property="cardButtons" destination="LNM-m2-P0T" id="nWZ-7H-c0x"/>

@@ -26,7 +26,7 @@
 {
     if (!_game)_game = [[CXCardMatchingGame alloc]initWithCardCount:[self.cardButtons count]
                                                           usingDeck:[self creatDeck]];
-
+    
     return _game;
 }
 
